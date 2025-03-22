@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 
-export default function register(){
+export default function login(){
 
     const [formData, setFormData] = useState({
-        name: "",
         email: "",
         password: "",
     });
@@ -25,18 +24,8 @@ export default function register(){
         <form onSubmit={handleSubmit}
             className="bg-gray-800 p-6 rounded-lg  w-100 text-white"
         >
-            <h2 className="text-2xl font-bold text-center mb-4">Register</h2>
-            <div className="mb-4">
-            <label className="block text-gray-400">Name</label>
-            <input 
-                type="text" 
-                name="name"
-                value={formData.name} 
-                onChange={handleChange}
-                className="w-full p-2 rounded bg-gray-700 border"
-                required 
-            />
-            </div>
+            <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
+
             <div className="mb-4">
             <label className="block text-gray-400">Email</label>
             <input 
@@ -63,7 +52,7 @@ export default function register(){
             type="submit" 
             className="w-full bg-blue-500 p-2 rounded"
             >
-            Register
+            Login
             </button>
         </form>
     </div>

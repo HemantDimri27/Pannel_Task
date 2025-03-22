@@ -32,10 +32,10 @@ export default function RootLayout({ children }) {
                 <Link href="/">Home</Link>
               </li>
               <li className="hover:text-gray-400">
-                <Link href="/">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li className="hover:text-gray-400">
-                <Link href="/">Login</Link>
+                <Link href="/login">Login</Link>
               </li>
               <li className="hover:text-gray-400">
                 <Link href="/register">Register</Link>
